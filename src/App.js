@@ -9,6 +9,7 @@ import useTodoState from './useTodoState';
 const storage = JSON.parse(localStorage.getItem('todos'));
 const initialState = !storage ? [] : storage;
 
+
 const App = () => {
     const { todos, addTodo, clearTodos, deleteTodo } = useTodoState(
         initialState
